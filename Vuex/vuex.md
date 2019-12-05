@@ -1,6 +1,9 @@
+> [官网链接](https://vuex.vuejs.org/zh/guide/)
 ```js
-import Vuex from 'vue';
+import Vue from 'vue';
+import Vuex from 'vuex';
 import app from './app.js';
+Vue.use(Vuex);
 export default new Vuex.Store({
     modules: {
         app
@@ -36,5 +39,6 @@ export default {
 
 * [https://juejin.im/post/5d500d0de51d453b5c121890](https://juejin.im/post/5d500d0de51d453b5c121890)
 * [https://www.cnblogs.com/mengfangui/p/9146290.html](https://www.cnblogs.com/mengfangui/p/9146290.html)
+* [源码分析](https://tech.meituan.com/2017/04/27/vuex-code-analysis.html)
 
 

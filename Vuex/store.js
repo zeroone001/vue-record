@@ -28,7 +28,7 @@ export class Store {
     // store internal state
     this._committing = false
     this._actions = Object.create(null)
-    this._actionSubscribers = []
+    this._actionSubscribers = [] // 订阅函数集合，Vuex提供了subscribe功能
     this._mutations = Object.create(null)
     this._wrappedGetters = Object.create(null)
     this._modules = new ModuleCollection(options)
@@ -223,7 +223,7 @@ export class Store {
     this._committing = committing
   }
 }
-
+// class end
 function genericSubscribe (fn, subs) {
   if (subs.indexOf(fn) < 0) {
     subs.push(fn)
