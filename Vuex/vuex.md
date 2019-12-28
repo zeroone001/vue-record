@@ -37,8 +37,8 @@ export default {
 
 ##### 学习文档
 
-* [https://juejin.im/post/5d500d0de51d453b5c121890](https://juejin.im/post/5d500d0de51d453b5c121890)
-* [https://www.cnblogs.com/mengfangui/p/9146290.html](https://www.cnblogs.com/mengfangui/p/9146290.html)
+* [vue系列-vuex理解](https://juejin.im/post/5d500d0de51d453b5c121890)
+* [vuex 深入理解](https://www.cnblogs.com/mengfangui/p/9146290.html)
 * [源码分析](https://tech.meituan.com/2017/04/27/vuex-code-analysis.html)
 
 
