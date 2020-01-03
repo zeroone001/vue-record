@@ -40,3 +40,32 @@ const router = new Router({
 #### 路由组件传参
 
 props解耦
+
+#### 相同路由，参数不同不刷新的问题
+
+1. 给router-view 设置key
+这种方式可能对性能不好
+```html
+<keep-alive>
+      <router-view :key="$route.fullPath"></router-view>
+</keep-alive>
+```
+2. 官方的方法
+```js
+watch: {
+    '$route' () {
+        // 执行数据更新
+    }
+}
+```
+3. 组件导航来设置对应的meta属性
+```js
+beforeRouteEnter (to, from, next) {
+    to.meta.keepAlive = false;
+    next();
+},
+beforeRouteLeave (to, from, next) {
+    to.meta.keepAlive = false;
+    next();
+}
+```
