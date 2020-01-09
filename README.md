@@ -65,4 +65,26 @@ Vue的模板基于纯HTML，基于Vue的模板语法，还是可以按照以前H
 
 每个Vue组件都有一个对应的 Watcher ，这个 Watcher 将会在组件 render 的时候收集组件所依赖的数据，并在依赖有更新的时候，触发组件vm._updata调用patch()进行diff，重新渲染DOM。
 
+#### debounce
 
+```js
+const debounce = (func, wait, immediate) => {
+    let timeout;
+    return function (...args) {
+        const later = () => {
+            timeout = null;
+            if (!immediate) {
+                func.apply(this, args);
+            }
+        };
+        clearTimeout(timeout);
+        timeout = setTimeout(later, wait);
+
+        if (immediate && !timeout) {
+            func.apply(this, args);
+        }
+    };
+};
+
+export default debounce;
+```
