@@ -1,0 +1,19 @@
+{
+  "name": "vue-record",
+  "version": "1.0.0",
+  "description": "#### 创建Vue的几种方式",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zeroone001/vue-record.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zeroone001/vue-record/issues"
+  },
+  "homepage": "https://github.com/zeroone001/vue-record#readme"
+}
