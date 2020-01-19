@@ -8,6 +8,7 @@
 <keep-alive>
 ```
 2. 怎么定义vue-router的动态路由？怎么获取传过来的值？
+
 ```javascript
 {
     path: '/page/:id',

@@ -2,9 +2,6 @@
 
 > vue-router 现在是@3.x版本
 
-* 创建单页应用
-
-
 ##### feature
 
 * this.$route 访问当前路由
@@ -12,9 +9,11 @@
 
 ##### 两种跳转方式
 
-* `<router-link to="/page"></router-link>`
-* this.$router.push('/page')  
-* this.$router.go(-1)
+```js
+<router-link to="/page"></router-link>
+this.$router.push('/page');
+this.$router.go(-1);
+```
   
 ##### base
 * 编程式导航：this.$router.push({path: '/page', query: {name: 'lys'}})

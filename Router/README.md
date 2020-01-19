@@ -4,7 +4,7 @@
 this.$router.push({path: '', query: {a: ''}});
 this.$router.push({name: '', params: {b: ''}});
 // 这种情况是params 不生效的
-this.$router.push({path: '', params: {a: ''}})
+this.$router.push({path: '', params: {a: ''}});
 ```
 
 #### 重定向
