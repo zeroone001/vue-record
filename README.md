@@ -88,3 +88,14 @@ const debounce = (func, wait, immediate) => {
 
 export default debounce;
 ```
+#### $nextTick
+
+```js
+mounted () {
+    this.$nextTick(() => {
+        setTimeout(() => {
+            // code
+        }, 0);
+    });
+}
+```
