@@ -99,3 +99,46 @@ mounted () {
     });
 }
 ```
+
+#### vue-lazyload & vue-awesome-swiper
+
+##### 一
+```html
+<img :data-src="item.img" >
+```
+```js
+data () {
+    return {
+        swiperOption: {
+            autoplay: {
+                delay: 3000,
+                stopOnLastSlide: false,
+                disableOnInteraction: false
+            },
+            pagination: {
+                el: '.swiper-pagination'
+            },
+            loop: true,
+            lazy: {
+                loadPrevNext: true
+            }
+        }
+    };
+},
+```
+
+##### 二
+```html
+<template>
+    <a :href="item.redirect_url" class="img-link" target="_blank"><img class="swiper-lazy-footer" :data-src="item.pic_url" ref="imgEle"  alt=""></a>
+</template>
+<script>
+    export default {
+        name: 'lazyImage',
+        props: ['item'],
+        mounted () {
+            this.$refs.imgEle.src = this.item.pic_url;
+        }
+    };
+</script>
+```
