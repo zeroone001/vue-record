@@ -1,3 +1,8 @@
+<!--
+ * @Description: 请输入文件描述
+ * @Author: liuyongsheng
+ * @Date: 2019-12-31 20:59:51
+-->
 #### @nuxtjs/axios
 
 
@@ -24,5 +29,8 @@ export default {
     this.todos = data;
   }
 };
-
 ```
+
+## 获取完成URL
+
+`req.host + req.url`
