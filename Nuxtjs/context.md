@@ -8,6 +8,30 @@ Vue 根实例, 暂时没发现有什么作用,可以这么用app.$axios, 比如p
 
 是否是开发 dev 模式, 这个主要用在nuxt.config.js, 比如判断是dev模式，然后加上eslint 检测，再比如，dev模式下，不加hash
 
+### route
+
+路由实例
+
+### store
+
+Vuex 数据
+
+使用： store.state.xxx 或者 store.commit('xxx', xxxx);
+
+### params
+
+等于route.params,这个比较常用
+
+### query
+
+等于route.query, 也比较常用
+
+### env
+
+nuxt.config.js 中配置的环境变量 env: {}
+
+配置好了之后process.env.xxx 也是可以访问的
+
 ### req 
 
 ```js
@@ -36,4 +60,7 @@ console.log('$route', url);
 6. `req.params` 这个在nuxt 里面就不要用了，直接用context 的params
 7. 想看更多req的东西，官网链接`https://expressjs.com/en/4x/api.html#req`， 我们现在用的express 是4.x 版本的
 
+### res
+
+### redirect
 
