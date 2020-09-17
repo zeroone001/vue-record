@@ -62,5 +62,8 @@ console.log('$route', url);
 
 ### res
 
+Node.js API 的 Response 对象
+
 ### redirect
 
+用这个方法重定向用户请求到另一个路由
