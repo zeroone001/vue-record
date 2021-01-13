@@ -1,4 +1,6 @@
 > [官网链接](https://vuex.vuejs.org/zh/guide/)
+
+### 使用
 ```js
 import Vue from 'vue';
 import Vuex from 'vuex';
@@ -23,6 +25,12 @@ export default {
 }
 ```
 
+### 原理
+
+
+
+### 注意点
+
 1. 使用常量代替mutation事件类型
 
 使用常量替代 mutation 事件类型在各种 Flux 实现中是很常见的模式。这样可以使 linter 之类的工具发挥作用，同时把这些常量放在单独的文件中可以让你的代码合作者对整个 app 包含的 mutation 一目了然
@@ -31,9 +39,7 @@ export default {
 
 3. Action可以是异步函数
 
-4. 命名空间
-
-`namespaced: true`
+4. 命名空间 `namespaced: true`
 
 ##### 学习文档
 
